@@ -21,6 +21,7 @@ st.markdown("* Trout (송어)")
 st.markdown("### 3. 사용법")
 st.markdown("바다물고기의 사진을 업로드 해주세요. 딥러닝 모델이 각각의 어류에 해당할 확률을 계산해서 결과를 출력합니다.")
 
+
 file_up = st.file_uploader("물고기 jpg사진을 올려주세요", type="jpg")
 
 if file_up is not None:
@@ -37,4 +38,6 @@ if file_up is not None:
                  label[0], " ", "확률: ", "{0:0.2f} %".format(label[1]))
 
 
+st.markdown("### 4. 양해")
+st.markdown("이 딥러닝데모는 한정된 환경에서 촬영된 데이터를 사용하여 작성되었습니다. 데이터셋과 다른 환경에서 촬영된 사진이나 미대응어류에 관해서는 정확한 판단이 불가능한 경우도 있으니 양해바랍니다.")
 st.text("만든이 : 김종혁")
