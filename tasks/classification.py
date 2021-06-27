@@ -8,14 +8,14 @@ upper_path = pathlib.Path().resolve()
 
 model_path = upper_path / "models" / "classification_model.pth"
 cls_list = ['Black Sea Sprat',
-            'Gilt-Head Bream',
-            'Hourse Mackerel',
-            'Red Mullet',
-            'Red Sea Bream',
-            'Sea Bass',
-            'Shrimp',
+            'Gilt-Head Bream (귀족도미)',
+            'Hourse Mackerel (전갱이)',
+            'Red Mullet (붉은 숭어)',
+            'Red Sea Bream (참돔)',
+            'Sea Bass (농어)',
+            'Shrimp (새우)',
             'Striped Red Mullet',
-            'Trout']
+            'Trout (송어)']
 rgb_mean = [0.485, 0.456, 0.406]
 rgb_std = [0.229, 0.224, 0.225]
 
